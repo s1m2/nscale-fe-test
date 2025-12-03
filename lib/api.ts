@@ -39,3 +39,17 @@ export async function getJobs(): Promise<Job[]> {
 
   return (await res.json()) as Job[];
 }
+
+export async function postJob(job: Partial<Job>): Promise<Job> {
+  const res = await fetch('/api/jobs', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify(job)
+  });
+
+  if (!res.ok) {
+    throw new Error(`Failed to post job: ${res.status}`);
+  }
+
+  return (await res.json()) as Job;
+}

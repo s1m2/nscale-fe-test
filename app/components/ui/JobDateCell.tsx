@@ -1,1 +1,1 @@
-export { default } from "./generic/JobDateCell";
+export { default } from "./common/JobDateCell";

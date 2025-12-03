@@ -6,12 +6,12 @@ type Props = {
 };
 
 export default function JobDateCell({ date, name }: Props) {
-  const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  const dateFormatter = new Intl.DateTimeFormat("en-GB", {
     month: "short",
     day: "numeric",
     year: "numeric",
   });
-  const timeFormatter = new Intl.DateTimeFormat("en-US", {
+  const timeFormatter = new Intl.DateTimeFormat("en-GB", {
     hour: "numeric",
     minute: "numeric",
     hour12: true,

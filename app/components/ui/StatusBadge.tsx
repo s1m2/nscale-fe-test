@@ -1,1 +1,1 @@
-export { default } from "./generic/StatusBadge";
+export { default } from "./common/StatusBadge";

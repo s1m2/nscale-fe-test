@@ -33,28 +33,28 @@ export default function FineTuningUsageCard() {
         <div className="flex-1">
           <ul className="w-full flex flex-col gap-2">
             <li className="flex items-center w-full">
-              <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="flex items-center gap-3 shrink-0">
                 <span className="w-3 h-3 rounded-full bg-green-500 inline-block" />
                 <span className="font-medium">Completed:</span>
               </div>
               <div className="flex-1 h-px bg-gray-200 mx-3" />
-              <span className="ml-2 flex-shrink-0">5 jobs</span>
+              <span className="ml-2 shrink-0">5 jobs</span>
             </li>
             <li className="flex items-center w-full">
-              <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="flex items-center gap-3 shrink-0">
                 <span className="w-3 h-3 rounded-full bg-blue-500 inline-block" />
                 <span className="font-medium">Running:</span>
               </div>
               <div className="flex-1 h-px bg-gray-200 mx-3" />
-              <span className="ml-2 flex-shrink-0">4 jobs</span>
+              <span className="ml-2 shrink-0">4 jobs</span>
             </li>
             <li className="flex items-center w-full">
-              <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="flex items-center gap-3 shrink-0">
                 <span className="w-3 h-3 rounded-full bg-red-500 inline-block" />
                 <span className="font-medium">Failed:</span>
               </div>
               <div className="flex-1 h-px bg-gray-200 mx-3" />
-              <span className="ml-2 flex-shrink-0">3 jobs</span>
+              <span className="ml-2 shrink-0">3 jobs</span>
             </li>
           </ul>
         </div>

@@ -21,3 +21,24 @@ export async function GET() {
     return new NextResponse(String(err), { status: 500 });
   }
 }
+
+export async function POST(request: Request) {
+  const apiKey = process.env.JOB_API_KEY;
+
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+  if (apiKey) headers['x-api-key'] = apiKey;
+
+  try {
+    const body = await request.text();
+
+    const res = await fetch(URL, { method: 'POST', headers, body });
+    const text = await res.text();
+    if (!res.ok) {
+      return new NextResponse(text || 'error', { status: res.status });
+    }
+
+    return new NextResponse(text, { status: res.status, headers: { 'Content-Type': 'application/json' } });
+  } catch (err) {
+    return new NextResponse(String(err), { status: 500 });
+  }
+}

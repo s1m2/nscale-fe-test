@@ -1,6 +1,6 @@
 import React from "react";
-import StatusBadge from "../generic/StatusBadge";
-import JobDateCell from "../generic/JobDateCell";
+import StatusBadge from "../common/StatusBadge";
+import JobDateCell from "../common/JobDateCell";
 import { Job } from "../../../../lib/api";
 import Image from "next/image";
 

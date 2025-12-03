@@ -18,7 +18,7 @@ export default function StatusBadge({ status }: Props) {
       : "bg-gray-100 text-gray-800";
 
   return (
-    <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold ${classes}`}>
+    <span className={`inline-flex items-center px-2 py-1 rounded-lg text-xs font-semibold ${classes}`}>
       {status}
     </span>
   );
